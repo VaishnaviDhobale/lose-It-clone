@@ -1,0 +1,477 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family:sans-serif
+}
+/* body{
+  background-color: red;
+} */
+#top{
+  background-color: rgb(133,224,255);
+  color:rgb(67, 73, 73);
+  text-align: center;
+  padding: 18px;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+#logo_login{
+display: flex;
+height: 100px;
+/* border: 1px solid red; */
+justify-content: space-between;
+padding-left: 100px;
+padding-right: 100px;
+align-items: center;
+padding-top: 30px;
+}
+#logo_login>img{
+  height: 250px;
+}
+#logo_login>button{
+  width: 130px;
+  height: 50px;
+  background-color: rgb(255,148,0);
+  border: none;
+  border-radius: 5px;
+}
+#logo_login>button>a{
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+
+/* middle */
+.middle{
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: center;
+  margin-top: 40px;
+  background-image: url(https://assets.loseit.com/website/home/Wave.png), linear-gradient(90deg, rgba(245, 128, 30, 1) 0, rgba(246, 146, 29, 1) 100%);
+    background-size: 100% 550px;
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    padding: 50px 0px;
+    width: 100%;
+}
+.middle>img{
+  width: 275px;
+  /* border: 3px solid blue; */
+  margin-right: 100px;
+
+}
+.middle>img+div>h1{
+  color:rgb(49, 51, 51);
+    font-size: 58px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.middle>img+div>p{
+  font-size: 23px;
+  color:rgb(81, 85, 85);
+}
+.middle>img+div>button{
+  width: 180px;
+  height: 50px;
+  background-color: rgb(24,57,98);
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px
+}
+.middle>img+div>button>a{
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  word-spacing: 2px;
+}
+.middle>img+div>div{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.middle>div>div>div:nth-child(1){
+  margin-right: 30px;
+  /* border: 1px solid red; */
+}
+
+/* icon */
+.fa-solid{
+  color:#fed206;
+  font-size: 24px;
+  /* border: 1px solid red; */
+}
+.fa-brands{
+  font-size: 28px;
+  color: gray;
+}
+
+
+/* weight Loss Made Easy */
+.weightLossMadeEasy{
+  padding: 50px 0 70px 0;
+}
+.weightLossMadeEasy p{
+      /* border: 1px solid red; */
+  color: #878789;
+  font-size: 17px;
+  line-height: 25px;
+}
+.weightLossMadeEasy img{
+  width: 160px;
+}
+.weightLossMadeEasy h1{
+  text-align: center;
+  /* margin-top: 50px; */
+  margin-bottom: 40px;
+  font-size: 35px;
+  font-weight: 500;
+  color:#132e50;
+}
+.mid{
+  display: flex;
+  justify-content:space-evenly;
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+}
+.mid>div{
+  /* border: 2px solid red; */
+  width:32%;
+  text-align:center
+}
+.mid>div>h2{
+  color:#f7842b;
+  font-size: 22px;
+  font-weight:400;
+  margin-bottom: 10px;
+}
+
+/* slider */
+
+.slide img{
+  width: 100px;
+}
+.slider{
+  position: relative;
+  /* width:70%; */
+  background-color: #f1f1f1;
+  padding: 50px;
+}
+.slide{
+  margin: auto;
+  width:70%;
+  height: auto;
+  display: flex;
+  overflow:hidden;
+  position: relative;
+  scroll-behavior: smooth;
+}
+.slide>div{
+  min-width: 47%;
+  overflow: hidden;
+  text-align: center;
+  background-color: white;
+  padding:20px;
+}
+.slide>div:nth-child(1),.slide>div:nth-child(3),.slide>div:nth-child(5){
+  margin-right: 30px;
+}
+.slide>div>p{
+  color: #878789;
+  line-height:25px;
+}
+.slide>div>h3{
+  color: #1f3f66;
+  font-weight: 500;
+  font-size:25px;
+  margin: 10px 0;
+}
+.btns>button{
+  width: 50px;
+  background-color: rgb(147, 143, 143);
+  height: 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.btns{
+  text-align: center;
+  margin-top: 30px;
+}
+.btns>button:hover{
+  background-color:rgb(49, 47, 47)
+}
+
+/* pounds */
+.pounds>div:nth-child(1){
+  /* border:2px solid red; */
+  text-align:center;
+  margin-top: 80px;
+}
+.pounds>div:nth-child(1)>img{
+  width: 250px;
+}
+.pounds>div:nth-child(1)>h1{
+  font-size:100px;
+  color:#ff9400;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.pounds>div:nth-child(1)>p{
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 12px;
+  font-size: 30px;
+  color:rgb(38, 35, 35);
+  margin-bottom: 20px;
+}
+hr{
+  border: 6px solid #ff9400 ;
+  background-color: #ff9400;
+  width: 70px;
+  text-align: center;
+}
+.hr{
+  display: flex;
+  justify-content:center;
+}
+.images{
+  width: 80%;
+  display: flex;
+  justify-content:space-around;
+  margin: auto;
+  height: 80px;
+}
+.images img{
+  width: 180px
+}
+.pounds>div+div{
+  /* border: 1px solid red; */
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.pounds>div+div h3{
+  font-weight: 500;
+  font-size: 27px;
+  padding-bottom: 30px;
+}
+
+
+/* advices */
+
+.advices{
+  background-color:#183962;
+  color:white;
+  padding: 60px;
+}
+.advices h1{
+  text-align: center;
+}
+.advices>div{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content:space-around;
+}
+.advices>div>div{
+  width: 43%;
+  text-align:center;
+  margin-top: 40px;
+}
+.advices>div>div>img{
+  width: 230px;
+}
+.advices>div>div>p{
+  line-height: 24px;
+}
+.color{
+  color:#ff9400;
+  font-size:17px;
+  font-size: 17px;
+}
+.small{
+  font-size: 12px;
+  margin-top: 20px;
+}
+.advices button{
+  width: auto;
+  margin-left: 41%;
+  border: none;
+  margin-top: 50px;
+}
+.advices button>a{
+  border-radius: 8px;
+  padding:16px 60px;
+  text-decoration: none;
+  color:white;
+  background-color: #ff9400;
+  font-size: 18px;
+}
+.advices>div>div:nth-child(1){
+  margin-right: 60px;
+}
+.advices>div>div:nth-child(2){
+  margin-left: 60px;
+}
+
+/* get_started */
+.get_started{
+  text-align: center;
+    padding: 50px 0 70px 0;
+    background-color: #f1f1f1;
+    background-image: url(https://assets.loseit.com/website/home/Pattern_50opacity_Long.svg);
+    background-size: cover;
+    background-position: center;
+}
+.get_started h2{
+  font-size: 25px;
+  color: #ff9400;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.get_started>div>img:nth-child(1){
+  margin-right: 20px;
+}
+.get_started>div>img:nth-child(2){
+  margin-left: 20px;
+}
+/* approach */
+
+.approach{
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: relative;
+}
+.approach>div>div{
+  display: flex;
+  overflow: hidden;
+  width:75.1%;
+  margin: auto;
+  height: 216px;
+}
+.approach>div>div>div{
+  width:29.5%;
+  text-align:center;
+  margin-right:57px;
+}
+.scroll9{
+  margin-right: 0px;
+}
+.divs>div img{
+  width:300px;
+  margin-bottom: 10px;
+}
+.approach h1{
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size:28px
+}
+.wraper{
+  position: relative;
+}
+.wraper,.divs{
+  scroll-behavior: smooth;
+}
+.approach p{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.divs i{
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+}
+#left{
+  position: relative;
+  top:90px;
+  left: 100px;
+}
+#right{
+  position: relative;
+  bottom:150px;
+  left: 1195px;
+}
+.fa{
+  color:#fed206;
+  font-size:40px;
+  cursor: pointer;
+}
+#loss>a{
+  text-decoration: none;
+  color:white;
+  font-size:17px;
+}
+#loss{
+  /* width: 180px; */
+  background-color: #183962;
+  margin-left: 43%;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+/* footer */
+
+.footer{
+  background-color: #183962;
+  padding:20px 10px 50px 20px;
+}
+.footer>div img{
+  width: 205px;
+  height: 135px;
+  /* display: flex; */
+  margin-left: 41%;
+}
+.logo{
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+  right: 20px;
+}
+i.fab {
+  color: #fff;
+  font-size: 20px;
+  margin: 20px 10px;
+}
+.copy{
+  text-align: center;
+  position: relative;
+  left: -17px;
+}
+.copy p{
+  color:white;
+  font-size: 15px;
+  line-height: 26px;
+}
+table td a{
+  color: white;
+  margin-right: 90px;
+  text-decoration: none;
+}
+table{
+  margin: auto;
+  position: relative;
+  left:50px;
+}
+table tr{
+  padding-bottom: 20px;
+}
+.last{
+  margin-top: 20px;
+}
+
+
+.man{
+  background-color: #183962;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: sticky;
+  bottom: 53px;
+  left: 1285px;
+}
