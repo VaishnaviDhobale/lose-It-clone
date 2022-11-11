@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <style>
+    *{
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    .container{
+      margin-top: 10%;
+    }
+    form{
+      width: 30%;
+      margin: auto;
+    }
+    input{
+      width: 100%;
+      padding:10px;
+      margin: 20px 0;
+      outline: none;
+    }
+    h2{
+      text-align: center;
+    }
+    input[type=submit]{
+      background-color: #f98603;
+      border: none;
+      color:white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Admin Login</h2>
+    <form>
+      <input type="text" placeholder="Enter Username" id="user">
+      <input type="text" placeholder="Enter password" id="pass">
+      <input type="submit">
+    </form>
+  </div>
+</body>
+</html>
+<script>
+  document.querySelector("form").addEventListener("submit",fun);
+  function fun(event){
+    event.preventDefault();
+    username=document.querySelector("#user").value;
+    pass=document.querySelector("#pass").value;
+    console.log(username,pass)
+    if(username=="admin" && pass=="12345"){
+      window.location.href="table.html"
+    }else{
+      alert("Something Went Wrong!")
+    }
+  }
+</script>

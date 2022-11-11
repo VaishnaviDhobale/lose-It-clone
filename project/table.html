@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1>User Data</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Current Weight</th>
+          <th>Goal Weight</th>
+          <th>Height</th>
+          <th>Gender</th>
+          <th>Birth date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- append data here -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+<script>
+  let weightArr=JSON.parse(localStorage.getItem("try"));
+  let heightArr=JSON.parse(localStorage.getItem("height"));
+  let comanArr=[JSON.parse(localStorage.getItem("try")),JSON.parse(localStorage.getItem("height"))]
+
+  
+  let tbody=document.querySelector("tbody")
+  comanArr.forEach((element,index)=>{
+    for(let i=0;i<element[index].length-1;i++){
+      let row=document.createElement("tr");
+      let cw=document.createElement("td");
+      cw.innerText=element[i].cw+" "+element[i].m1;
+      let gw=document.createElement("td");
+      gw.innerText=element.gw+" "+element.m2;
+      row.append(cw,gw)
+      tbody.append(row) 
+    }
+  })
+  console.log(comanArr)
+  
+</script>
