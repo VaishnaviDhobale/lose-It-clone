@@ -29,14 +29,14 @@ padding-top: 30px;
 #logo_login>img{
   height: 250px;
 }
-#logo_login>button{
+#logo_login>div>button{
   width: 130px;
   height: 50px;
   background-color: rgb(255,148,0);
   border: none;
   border-radius: 5px;
 }
-#logo_login>button>a{
+#logo_login>div>button>a{
   text-decoration: none;
   color: white;
   font-size: 22px;
@@ -105,6 +105,10 @@ padding-top: 30px;
 .fa-brands{
   font-size: 28px;
   color: gray;
+}
+.f{
+  position: relative;
+  top: 5px;
 }
 
 
@@ -199,6 +203,8 @@ padding-top: 30px;
 .btns{
   text-align: center;
   margin-top: 30px;
+  position: relative;
+  right: 10px;
 }
 .btns>button:hover{
   background-color:rgb(49, 47, 47)
@@ -468,10 +474,23 @@ table tr{
 
 .man{
   background-color: #183962;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  display: flex;
+  justify-content:flex-end;
   position: sticky;
   bottom: 53px;
-  left: 1285px;
+  left: 1300px;
+  padding: 3px;
+}
+
+/* admin */
+#admin{
+  width:100px;
+  height:60px;
+  color:white;
+  font-size:20px;
+  margin-left: 30px;
+  border: 2px solid red;
 }

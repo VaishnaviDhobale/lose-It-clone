@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif
+}
+.bag{
+  display: flex;
+  justify-content: center;
+  background-image: url(https://assets.loseit.com/website/onboarding/Wave.svg);
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: 100% auto;
+  background-position: bottom center;
+  padding-bottom: 100px;
+  height: 100vh;
+}
+#logo{
+  width: 147px;
+  height: 130px;
+}
+form,.form{
+  /* border: 1px solid red; */
+  /* text-align: center; */
+  background-color: #f5f5f5;
+  padding: 50px;
+  margin-top: 40px;
+  width: 500px;
+}
+input{
+  width: 50%;
+  padding: 10px;
+  outline: none;
+}
+select{
+  width: 48%;
+  padding: 10px;
+}
+form h1,.form h1{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 16px;
+}
+.forCurrent{
+  margin-bottom: 40px;
+}
+.button{
+  margin-top: 20px;
+  text-align: center;
+}
+#con1,#con2{
+  background-color: #f7901f;
+  border: none;
+  color:white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 30px;
+  width: 200px;
+  margin-top: 10px;
+}
+.card h2{
+  text-align: center;
+  color: #173962;
+  font-size: 30px;
+}
+.footer{
+  display: flex;
+  justify-content:flex-end;
+  background-color: #183962;
+  color:white;
+  position: sticky;
+  bottom: 0px;
+}
+.first{
+  padding:40px;
+  text-align: center;
+  margin-right: 100px;
+}
+.man>img{
+  width: 40px;
+}
+.man{
+  background-color: #183962;
+  display: flex;
+  height: 150px;
+  align-items: flex-end;
+}
+.link{
+  color:#0070d7;
+}
+.para{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 15px;
+}
+input[type=date]{
+  width: 100%;
+}
+input[type=text],input[type=email],input[type=password]{
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 16px;
+}
