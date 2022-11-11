@@ -1,12 +1,13 @@
 *{
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family:sans-serif
 }
 /* body{
   background-color: red;
 } */
+.container{width: 100%;}
 #top{
   background-color: rgb(133,224,255);
   color:rgb(67, 73, 73);
@@ -173,15 +174,16 @@ padding-top: 30px;
   scroll-behavior: smooth;
 }
 .slide>div{
-  min-width: 47%;
+  min-width: 43%;
   overflow: hidden;
   text-align: center;
   background-color: white;
   padding:20px;
-}
-.slide>div:nth-child(1),.slide>div:nth-child(3),.slide>div:nth-child(5){
   margin-right: 30px;
 }
+/* .slide>div:nth-child(1),.slide>div:nth-child(3),.slide>div:nth-child(5){
+  margin-right: 30px;
+} */
 .slide>div>p{
   color: #878789;
   line-height:25px;

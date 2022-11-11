@@ -12,7 +12,7 @@ function scroll(){
   left.scrollBy(1080,0);
 
   var slide=document.querySelector(".slide")
-  slide.scrollBy(830,0);
+  slide.scrollBy(885,0);
 }
 
 
@@ -21,6 +21,6 @@ function scrolr(){
   right.scrollBy(-1080,0);
 
   var slide=document.querySelector(".slide")
-  slide.scrollBy(-830,0);
+  slide.scrollBy(-895,0);
 }
 

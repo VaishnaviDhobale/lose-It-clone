@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>User Data</title>
+  <link rel="stylesheet" href="./css/table.css">
 </head>
 <body>
   <div class="container">
@@ -12,11 +13,15 @@
     <table>
       <thead>
         <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
           <th>Current Weight</th>
           <th>Goal Weight</th>
           <th>Height</th>
+          <th>Birth Date</th>
           <th>Gender</th>
-          <th>Birth date</th>
+          <th>Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -26,24 +31,4 @@
   </div>
 </body>
 </html>
-<script>
-  let weightArr=JSON.parse(localStorage.getItem("try"));
-  let heightArr=JSON.parse(localStorage.getItem("height"));
-  let comanArr=[JSON.parse(localStorage.getItem("try")),JSON.parse(localStorage.getItem("height"))]
-
-  
-  let tbody=document.querySelector("tbody")
-  comanArr.forEach((element,index)=>{
-    for(let i=0;i<element[index].length-1;i++){
-      let row=document.createElement("tr");
-      let cw=document.createElement("td");
-      cw.innerText=element[i].cw+" "+element[i].m1;
-      let gw=document.createElement("td");
-      gw.innerText=element.gw+" "+element.m2;
-      row.append(cw,gw)
-      tbody.append(row) 
-    }
-  })
-  console.log(comanArr)
-  
-</script>
+<script src="./js/table.js"> </script>
