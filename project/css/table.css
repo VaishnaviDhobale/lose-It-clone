@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+table{
+  border: 1px solid rgb(233, 230, 230);
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+}
+tr,td,th{
+  border: 2px solid rgb(240, 240, 240);
+  text-align: center;
+  padding:10px 0;
+}
+h1{
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+th{
+  font-size: 19px;
+}
+td{
+  font-size: 17px;
+}

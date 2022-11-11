@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <style>
+    /* h1{
+      display:flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+    } */
+    .data{
+      color: #f6881f;
+      text-align: center;
+    }
+    .data img{
+      width: 250px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="data">
+    <img src="./img/CUT_THE_FAT-removebg-preview.png" alt="not found">
+    <h1 id="username"></h1>
+    <h1>WELCOME TO CUT THE FAT</h1>
+  </div>
+</body>
+</html>
+<script>
+  let name=localStorage.getItem("userName");
+  document.querySelector("#username").innerText="Hello "+name;
+</script>
