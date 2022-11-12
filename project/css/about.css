@@ -1,0 +1,360 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing: border-box; */
+  font-family:sans-serif;
+}
+#logo_login{
+  display: flex;
+  height: 100px;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  padding-top: 30px;
+  }
+  #logo_login>img{
+    height: 250px;
+  }
+  #logo_login>div>button{
+    width: 130px;
+    height: 50px;
+    background-color: rgb(255,148,0);
+    border: none;
+    border-radius: 5px;
+  }
+  #logo_login>div>button>a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+  }
+
+  /* midddle 1 /about */
+  .about{
+    text-align: center;
+    background-color: #ff9200;
+  }
+  .about>h1{
+    color: white;
+    padding: 90px;
+    font-size: 70px;
+  }
+
+  /* middle2 */
+
+.middle2{
+  /* border:1px solid red; */
+  text-align: center;
+  width: 58%;
+  margin: auto;
+  padding-top: 110px;
+  }
+.middle2>div>h1{
+  margin-bottom: 30px;
+  color: #183962;
+  font-size: 28px;
+}
+.middle2>div>p{
+  font-size:14px;
+}
+  /* weight Loss Made Easy */
+.weightLossMadeEasy{
+  padding: 50px 0 70px 0;
+}
+.weightLossMadeEasy p{
+  font-size: 14px;
+  /* line-height: 20px; */
+}
+.weightLossMadeEasy img{
+  width: 160px;
+}
+.mid{
+  display: flex;
+  justify-content:space-evenly;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+.mid>div{
+  /* border: 2px solid red; */
+  width:32%;
+  text-align:center
+}
+.mid>div>h2{
+  color:#f7842b;
+  font-size: 22px;
+  font-weight:400;
+  margin-bottom: 10px;
+}
+/* MIddle2 button */
+.middle2>button{
+  border: none;
+  background-color: #ff9200;
+  color: white;
+  padding: 10px 60px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+/* middle 3 */
+
+.middle3{
+  margin-top: 120px;
+  background-color: #183962;
+  color: white;
+  display: grid;
+  grid-template-columns:40% 40%;
+  padding: 100px;
+}
+.middle3>div>img{
+  width: 46%;
+}
+.middle3>div:nth-child(1){
+  text-align: right;
+}
+.middle3>div:nth-child(2)>p:nth-child(2){
+  margin: 20px 0 30px 0;
+}
+.middle3>div:nth-child(2)>p{
+  font-size: 15px;
+}
+.middle3>div:nth-child(2)>button{
+  border: none;
+  cursor: pointer;
+  background-color: #ff9200;
+  color: white;
+  padding: 10px 60px;
+  font-size:18px
+}
+
+
+
+/* culture */
+.culture{
+  background-color: #f1f1f1;
+  padding: 90px;
+}
+.culture>div{
+  width: 50%;
+  /* border: 1px solid red; */
+  margin: auto;
+  text-align: center;
+}
+.culture>div>.imges>img{
+  width: 100%;
+}
+.imges{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+.imges>img:nth-child(1){
+  grid-column: 1/3;
+  grid-row: 1/3;
+  height: 100%;
+}
+.info_para>h1{
+  color: #183962;
+  margin: 30px;
+}
+.info_para>p{
+ font-size: 14px;
+}
+.info_para>button{
+ font-size: 18px;
+ border: none;
+ color:white;
+ background-color:#ff9200;
+ padding: 10px 60px;
+ margin: 20px;
+ cursor: pointer;
+}
+
+
+/* slider */
+.slider{
+  /* position: relative; */
+  padding: 90px;
+}
+.slide{
+  width: 80%;
+  display: flex;
+  /* position: relative; */
+  margin: auto;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.slide>div>img{
+  width: 50%;
+}
+.slide>div{
+  overflow: hidden;
+  min-width: 33%;
+  text-align: center;
+  /* border:1px solid blue; */
+  margin-left: 10px;
+}
+.btns>button{
+  width:15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  background-color:rgb(168, 163, 163);
+}
+.btns{
+  margin-top: 30px;
+  text-align: center;
+}
+.btns>button:hover{
+  background-color:rgb(75, 58, 58);
+}
+.slide>div>h1{
+  font-size:45px;
+  color: #183962;
+}
+.slide>div>p{
+  color: #183962;
+  font-size:18px;
+}
+
+.vedio{
+  background-color:#ff9200;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 175px 0 70px;
+}
+.vedio>div>p:last-child{
+  color: white;
+}
+.vedio>div>p:first-child{
+  color:#183962;
+  font-size:30px;
+  margin-bottom: 20px;
+}
+.vedio_info{
+  margin-top: 10%;
+  margin-left: 30px;
+}
+
+
+/* covid */
+
+.covid{
+  width: 60%;
+  margin: auto;
+  margin-top: 60px;
+}
+.covid>div>img{
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+}
+.covid>div{
+  display: flex;
+  padding: 60px;
+}
+.covid>div:nth-child(1)>div{
+  text-align: right;
+}
+.covid>div>div>p{
+  margin: 30px 0;
+}
+.covid>div>div>h1{
+  color: #183962;
+}
+.covid>div>div>button{
+  border: none;
+  padding: 10px 40px;
+  background-color: #ff9200;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+/* get_started */
+.get_started{
+  text-align: center;
+    padding: 50px 0 70px 0;
+    background-color: #f1f1f1;
+    background-image: url(https://assets.loseit.com/website/home/Pattern_50opacity_Long.svg);
+    background-size: cover;
+    background-position: center;
+}
+.get_started h2{
+  font-size: 25px;
+  color: #ff9400;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.get_started>div>img:nth-child(1){
+  margin-right: 20px;
+}
+.get_started>div>img:nth-child(2){
+  margin-left: 20px;
+}
+
+.footer{
+  background-color: #183962;
+  padding:20px 10px 50px 20px;
+}
+.footer>div img{
+  width: 205px;
+  height: 135px;
+  /* display: flex; */
+  margin-left: 41%;
+}
+.logo{
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+  right: 20px;
+}
+i.fab {
+  color: #fff;
+  font-size: 20px;
+  margin: 20px 10px;
+}
+.copy{
+  text-align: center;
+  position: relative;
+  left: -17px;
+}
+.copy p{
+  color:white;
+  font-size: 15px;
+  line-height: 26px;
+}
+table td a{
+  color: white;
+  margin-right: 90px;
+  text-decoration: none;
+}
+table{
+  margin: auto;
+  position: relative;
+  left:50px;
+}
+table tr{
+  padding-bottom: 20px;
+}
+.last{
+  margin-top: 20px;
+}
+
+
+.man{
+  background-color: #183962;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content:flex-end;
+  position: sticky;
+  bottom: 53px;
+  left: 1300px;
+  padding: 3px;
+}
