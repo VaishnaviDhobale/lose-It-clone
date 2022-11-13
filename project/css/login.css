@@ -37,6 +37,9 @@ input[type="submit"]{
   margin-bottom: 0px;
   font-size: 18px;
 }
+input[type="submit"]:hover{
+ color:#ff9400;
+}
 form{
   text-align: left;
 }

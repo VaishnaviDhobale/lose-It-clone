@@ -11,7 +11,12 @@
 
 <body>
   <div class="container">
-    <img id="logo" src="./img/android-icon-192x192.png" alt="">
+    <div id="logo_login">
+      <img src="./img/CUT_THE_FAT-removebg-preview.png" alt="Logo img">
+      <div>
+        <button><a href="login.html">User Login</a></button>
+      </div>
+    </div>
     <div class="bag">
       <div class="data">
         <div class="left">
@@ -33,19 +38,23 @@
         </div>
       </div>
       <form>
-        <form>
-          <h2>Create an account to save your plan</h2>
-          <input type="text" placeholder="Frist Name" id="name">
-          <input type="email" placeholder="Email" id="email">
-          <input type="password" placeholder="Password" id="pass">
-          <input type="password" placeholder=" Confirm Password" id="cpass">
-          <input type="number" placeholder="Enter weight in kg" id="cweight">
-          <input type="number" placeholder="Enter weight in kg" id="gweight">
-          <input type="text" placeholder="Enter height" id="height">
-          <input type="date" placeholder="Enter Birth date" id="bday">
-          <input type="text" placeholder='Gender' id="gender">
-          <input type="submit" value="Get Started" id="con1">
-        </form>
+        <h2>Create an account to save your plan</h2>
+        <input type="text" placeholder="Frist Name" id="name">
+        <input type="email" placeholder="Email" id="email">
+        <input type="password" placeholder="Password" id="pass">
+        <input type="password" placeholder=" Confirm Password" id="cpass">
+        <input type="number" placeholder="Enter current weight in kg" id="cweight">
+        <input type="number" placeholder="Enter goal weight in kg" id="gweight">
+        <input type="text" placeholder="Enter height in cm" id="height">
+        <label for="bday">Enter birth date</label>
+        <input type="date" placeholder="Enter Birth date" id="bday">
+        <select name="gender" id="gender">
+          <option value="">Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">other</option>
+        </select>
+        <input type="submit" value="Get Started" id="con1">
       </form>
     </div>
     <div class="footer">

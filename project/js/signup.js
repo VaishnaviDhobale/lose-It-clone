@@ -4,7 +4,6 @@ let emailValidation = [];
 commanArr.forEach((el, i) => {
   emailValidation.push(el.email);
 });
-console.log(emailValidation);
 let i = 0;
 function fun(event) {
   event.preventDefault();
@@ -18,49 +17,64 @@ function fun(event) {
   let height = document.querySelector("#height").value;
   let bday = document.querySelector("#bday").value;
   let gender = document.querySelector("#gender").value;
-  gender=capitalizeFirstLetter(gender)
-  let status =0;
+  gender=capitalizeFirstLetter(gender);
+  let status=true;
   if (pass !== cpass) {
     alert("Password Not Matched! Try Again");
+    status=false;
   }
-  if (
-    name == "" ||
-    email == "" ||
-    pass == "" ||
-    cweight == "" ||
-    gweight == "" ||
-    height == "" ||
-    bday == "" ||
-    gender == ""
-  ) {
+  else if(cweight<5 && gweight<5){
+    alert("Sorry This Is Not For You!");
+    status=false;
+  }
+  else if(cweight==gweight){
+    alert("No Need To Try This You Are Alredy Perfect");
+    status=false;
+  }
+  if(pass.length<6){
+    status=false;
+    alert("Enter Strong Password! You Have To Enter at least 6 Digit")
+  }
+  if ( name == "" || email == "" || pass == "" || cweight == "" || gweight == "" || height == "" || bday == "" || gender == "") {
     alert("Please Submit All Data");
+    status=false
   }
-  for (let i = 0; i < emailValidation.length; i++) {
-    if (email == emailValidation[i]) {
-      alert("This Email Allredy Save");
-      status=1
-      break;
-    }
+  let count=0
+  emailValidation.forEach((el)=>{
+    if(email==el){
+      count++;
+    status=false;
   }
-  console.log(status)
-  let obj = {
-    name,
-    email,
-    pass,
-    cpass,
-    cweight,
-    gweight,
-    height,
-    bday,
-    gender,
-  };
+})
+if(count>0){
+  status=false;
+    alert("You Are Alredy Our User Please Go To Login");
+  }
+  let obj={}
+  if(status){
+     obj = {
+      name,
+      email,
+      pass,
+      cpass,
+      cweight,
+      gweight,
+      height,
+      bday,
+      gender,
+    };
+  }
   commanArr.push(obj);
-  if(status==0){
+  let i=0
+  for(let key in obj){
+    i++
+  }
+  if(i==9){
     localStorage.setItem("commanData", JSON.stringify(commanArr));
     alert("Sign Up Successfully!");
+    document.querySelector("form").reset()
   }
 }
-
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }

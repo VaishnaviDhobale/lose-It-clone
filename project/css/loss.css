@@ -23,6 +23,9 @@
   align-items: center;
   margin-right: 60px;
 }
+.right>select:hover,.right>#home:hover{
+  color: #f6881f;
+}
 .nav button{
   border: none;
 }
@@ -32,6 +35,9 @@
   text-decoration: none;
   padding: 10px;
   border-radius: 2px;
+}
+.nav button>a:hover{
+  color: #f6881f;
 }
 .nav select{
   border: none;
@@ -128,6 +134,9 @@ option:hover{
   border-radius: 5px;
   margin-top: 30px;
   cursor: pointer;
+}
+.btn button:hover{
+ color: #f6881f;
 }
 .recipes>div>p{
   color: white;

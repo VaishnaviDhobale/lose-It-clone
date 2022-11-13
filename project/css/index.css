@@ -37,6 +37,9 @@ padding-top: 30px;
   border: none;
   border-radius: 5px;
 }
+#logo_login>div>button>a:hover{
+  color: rgb(255,148,0);
+}
 #logo_login>div>button>a{
   text-decoration: none;
   color: white;
@@ -87,6 +90,9 @@ padding-top: 30px;
   color: white;
   font-size: 17px;
   word-spacing: 2px;
+}
+.middle>img+div>button>a:hover{
+  color: #132e50;
 }
 .middle>img+div>div{
   display: flex;
@@ -318,6 +324,9 @@ hr{
   background-color: #ff9400;
   font-size: 18px;
 }
+.advices button>a:hover{
+  color: #ff9400;
+}
 .advices>div>div:nth-child(1){
   margin-right: 60px;
 }
@@ -413,6 +422,9 @@ hr{
   text-decoration: none;
   color:white;
   font-size:17px;
+}
+#loss>a:hover{
+ color:#132e50;
 }
 #loss{
   /* width: 180px; */
