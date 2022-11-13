@@ -24,4 +24,7 @@ function display(data){
     document.querySelector(".con").append(div)
 
   })
+  document.querySelector("#about").addEventListener("click",function(){
+    window.location.href="about.html"
+  })
 }

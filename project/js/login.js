@@ -6,6 +6,7 @@ function fun(event){
   let pass=document.querySelector("#pass").value;
   let count=0;
   let userName;
+  // console.log(checkData,email,pass)
   for(let i=0;i<checkData.length;i++){
     if(email==checkData[i].email && pass==checkData[i].pass){
       count++;
@@ -17,6 +18,7 @@ function fun(event){
     alert("Wrong Credentials")
   }else{
     // console.log(userName)
-    window.location.href="welcome.html"
+    alert("Login Successfully!")
+    window.location.href="welcome.html";
   }
 }
